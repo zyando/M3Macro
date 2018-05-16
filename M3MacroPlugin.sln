@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M3MacroPlugin", "M3MacroPlugin\M3MacroPlugin.csproj", "{ED61A646-E55C-48A1-A7A3-807FC62F20FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED61A646-E55C-48A1-A7A3-807FC62F20FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED61A646-E55C-48A1-A7A3-807FC62F20FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED61A646-E55C-48A1-A7A3-807FC62F20FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED61A646-E55C-48A1-A7A3-807FC62F20FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F2B2C61-7BF6-4886-AF84-71C5025D9AC2}
+	EndGlobalSection
+EndGlobal
