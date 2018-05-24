@@ -12,6 +12,8 @@ namespace M3MacroPlugin
         public List<HotKey> HotKeys { get; } = new List<HotKey>();
         public Core Core { get; }
 
+        private Control Control { get; set; }
+
         public HookNativeWindow(Core core)
         {
             Core = core;
@@ -19,6 +21,8 @@ namespace M3MacroPlugin
 
         public void StartHook(Control c)
         {
+            Control = c;
+
             AssignHandle(c.Handle);
             c.HandleDestroyed += new EventHandler(OnHandleDestroyed);
             c.HandleCreated += new EventHandler(OnHandleCreated);
@@ -58,7 +62,7 @@ namespace M3MacroPlugin
         {
             var msg = m;
 
-            if (!HotKeys.Any(h => h.WndProc(msg, Core.Scene)))
+            if (!HotKeys.Any(h => Form.ActiveForm.Handle == Control.Handle && h.WndProc(msg, Core.Scene)))
             {
                 base.WndProc(ref m);
             }
